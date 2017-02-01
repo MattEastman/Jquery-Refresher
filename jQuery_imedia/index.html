@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <img class="picture" id="one" src="air.jpg">
+
+     <img class="picture" id="two" src="fire.jpg">
+
+     <img class="picture" id="three" src="water.jpg">
+
+</div>
+
+</body>
+    
+    <script type="text/javascript">
+    // set up
+//    $(function() {
+//    
+//    });
+  
+    $(function() {
+        
+    $('.picture').hover(function() {    
+        
+        $('#wrapper img') .removeClass ('active');
+        $(this).addClass ('active');
+       });
+   });
+    
+    </script>
+    
+ </html>
+
+
+

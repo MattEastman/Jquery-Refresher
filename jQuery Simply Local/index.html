@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+
+    <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.4.min.css">
+    <link rel ="stylesheet" type="text/css" href="SLtheme1.css">
+          
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+    
+    <script type ="text/javascript" src="jquery.mobile-1.4.4.min.js"></script>
+    
+     <!-- Prevent scaling -->
+<meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale = 1.0" />
+
+ <!-- Eliminate url and button bars if added to home screen -->
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+
+ <!-- Choose how to handle the phone status bar -->
+ <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+ <!-- Specify a 320x460 start-up image. -->
+ <link rel="apple-touch-startup-image" href="startup.png" />
+
+ <!-- Choose a 57x57 image for the icon -->
+ <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    
+    
+    
+</head>
+
+   
+<!--    
+        1. Margin top on header        
+        2. Putting in a map? i frame zeemaps
+        3. Why Multiple .simply header pics for each page?
+        4. alfabetical in directory
+        5. Color text in directory, change font family
+        6. Chnage background - warm color
+        2. Change Direction of slide
+        
+
+-->
+    
+    
+<body>   
+    
+<div data-role="page" id="home">
+    
+    <div data-role="header">
+    
+        <div class="Simply"> <p><snap id="simplyword">Simply</snap> <snap id="local">Local</snap></p></div>
+    </div>
+    
+    <div data-role="navbar">
+    <ul>
+        <li><a href="#home" data-transition="slide" class="ui-btn">Map</a></li>
+        <li><a href="#wall" data-transition="slide" class="ui-btn">About Us</a></li>
+        <li><a href="#about" data-transition="slide" class="ui-btn">Directory</a></li>
+    </ul>
+</div><!-- /navbar -->
+    
+<div data-role="main" class="ui-content">
+ 
+<!--
+    
+  Google maps
+
+    <div data-url="map-page" data-role="page" id="map-page">
+    <div data-role="header" data-theme="a">
+    <h1>Maps</h1>
+    </div>
+    <div role="main" class="ui-content" id="map-canvas">
+         map loads here... 
+    </div>
+</div>
+    
+-->
+
+    
+<!-- Zeemaps-->
+<div class="zeemap">
+    <iframe frameborder=0 style='width:100%;height:350px' src='//www.zeemaps.com/pub?group=742565&nopdf=1&geosearch=1&locate=1&shuttered=1&x=-107.903380&y=34.452787&z=14'></iframe>
+    </div>
+            </div>    
+    
+    <div data-role="footer">
+    <p>Simply Local Prototype 10/2014</p>
+         <p>Created by Matthew Eastman</p>
+        
+        
+        
+        </div>
+    
+    
+    </div>    
+    
+<!--  Directory Page  ---------------------------------------------------------------------->
+    
+       <div data-role="page" id="about">
+     <div data-role="header">
+    
+         <div class="Simply"> <p><snap id="simplyword">Simply</snap> <snap id="local">Local</snap></p></div>
+    </div>
+    
+ 
+<div data-role="main" class="ui-content">
+   
+    <div data-role="navbar">
+    <ul>
+        <li><a href="#home" data-transition="slide" class="ui-btn">Map</a></li>
+        <li><a href="#wall" data-transition="slide" class="ui-btn">About Us</a></li>
+        <li><a href="#about" data-transition="slide" class="ui-btn">Directory</a></li>
+    </ul>
+</div><!-- /navbar ---------->     
+    
+    
+    
+    <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">  
+         
+         <li><a href="http://companyshopsmarket.coop"><img src="images/coop.png">
+            <h2>Burlington Company Shops</h2>
+            <h4>Weekly challenege!</h4>
+            <p>Gold Members - 20% of produce</p>    
+            <p>Silver Members - 10% of produce</p>        
+                </a></li>    
+        
+        <li><a href="http://pandoraspizza.com"><img src="images/Pandora.png">
+            <h2>Pandora's Pie</h2>
+            <p> Gold Members - 20% of appitizers</p></a></li>
+        
+         <li><a href="http://www.theroottrackside.com"><img src="images/Root.png">
+            <h2>Root Trackside</h2>
+            <p>Gold Member - 50% of deserts</p>
+            <p>Silver Member - 25% of deserts</p>
+            <p>Bronze Member - 10% of daily specils</p>
+            </a></li>
+        
+        
+        <li><a href="http://www.smittyshomemadeicecream.com"><img src="images/smitty.png"><h2>Smitty's Ice Cream</h2><p> Gold Members - 10%             off Ice Cream <div id="smit"><p>Silver Member - Free toppings</p> </div></p></a>
+    
+    <li><a href="http://tsdesigns.com"><img src="images/tsdesign.png">
+               <h2>tsdesigns</h2>
+               </a></li>    
+    </li>
+                       
+        <li><a href="https://www.facebook.com/pages/Local-Yogurt-Elon/170222883023585"><img src="images/yo">
+            <h2>Yo Zone - Daily Deal</h2>
+            <p>Buy 1 yogurt, get 1 50% off!</p>
+            <p>Gold Members - 10% off Ice Cream</p></a></li>
+            
+        
+           
+                   
+           
+</ul>
+        </div>    
+<!--
+    
+Calander
+<input type="text" data-role="date" data-inline="true">
+-->
+           
+           
+    <div data-role="footer">
+     <p>Simply Local Prototype 10/2014</p>
+         <p>Created by Matthew Eastman</p>
+        </div>
+    
+    
+    
+    </div>    
+
+<!-- Wall----------------------------------------------------------------------------------------------------------->
+  
+ <div data-role="page" id="wall">
+     <div data-role="header">
+    
+        <div class="Simply"> <p><snap id="simplyword">Simply</snap> <snap id="local">Local</snap></p></div>
+    </div>
+    
+ 
+<div data-role="main" class="ui-content">
+   
+    <div data-role="navbar">
+    <ul>
+        <li><a href="#home" data-transition="slide" class="ui-btn">Map</a></li>
+        <li><a href="#wall" data-transition="slide" class="ui-btn">About Us</a></li>
+        <li><a href="#about" data-transition="slide" class="ui-btn">Directory</a></li>
+    </ul>
+</div><!-- /navbar ---------->     
+</div>
+     
+     <div data-role="footer">
+    <p>Simply Local Prototype 10/2014</p>
+         <p>Created by Matthew Eastman</p>
+         
+                          <div id="about"><p>Simply Local is a membership-based local food Community designed to expand North Carolina's local Economy by increasing local food consumption.</p> </div>
+         
+        <div id="about"> <p>This prototype shows the basic use of the simply local map and directory on a mobile device. Future prototypes will look into creating user profiles with a local food tracking system for user to track their local spending and earn local points.</p></div>
+         
+        <div id="about"> <p> The local point system is a way for members to gain a higher rank and unlock more discounts. Later prototypes will also focus on implementing an area for members to interact and share information on a public wall.</p> </div>
+
+             
+             Stay tuned! 
+        </div>
+    
+     
+</div>
+</body>
+ </html>

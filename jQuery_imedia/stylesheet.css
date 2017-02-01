@@ -1,0 +1,32 @@
+/*CSS Stylesheet */
+
+body {height: 100%; margin: 0;}
+ul, ol {list-style: none;}
+.clearfix {clear: both;}
+img {max-width: 100%;}
+
+#wrapper img {
+    display: block;
+    margin: auto;
+}
+
+.picture {
+    width: 40%;
+    height: 40%;
+    -webkit-transition: all 200ms ease-in-out;
+-moz-transition: all 200ms ease-in-out;
+-ms-transition: all 200ms ease-in-out;
+-o-transition: all 200ms ease-in-out;
+transition: all 200ms ease-in-out;
+}
+.active {
+    border: 2px solid black;
+     width: 50%;
+    height: 50%;
+
+    -webkit-transition: all 200ms ease-in-out;
+-moz-transition: all 200ms ease-in-out;
+-ms-transition: all 200ms ease-in-out;
+-o-transition: all 200ms ease-in-out;
+transition: all 200ms ease-in-out;
+}
